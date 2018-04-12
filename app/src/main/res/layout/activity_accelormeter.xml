@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="clover.andriod_learner.Accelormeter">
+
+    <LinearLayout
+        android:id="@+id/accel_LL1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Sensor_title"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="@string/available_sensors"
+            android:textAlignment="center"
+            android:textColor="@color/bright_pink"
+            android:textSize="32sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/s1221"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layout_Sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Layout Sensor Name -->
+            <LinearLayout
+                android:id="@+id/SName_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SName_tt"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/name"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SName_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor Type -->
+            <LinearLayout
+                android:id="@+id/SType_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SType_tt"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/type"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/STYpe_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor Vendor -->
+            <LinearLayout
+                android:id="@+id/SVendor_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SVendor_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/vendor"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SVendor_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor Version -->
+            <LinearLayout
+                android:id="@+id/SVersion_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SVersion_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/version"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SVersion_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor Resolution -->
+            <LinearLayout
+                android:id="@+id/SResolution_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SResolution_tt"
+                    android:layout_width="49dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/resolution"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SResolution_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor MaxRange -->
+            <LinearLayout
+                android:id="@+id/SMax_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SMax_tt"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/max_range"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SMax_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor Power -->
+            <LinearLayout
+                android:id="@+id/SPower_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SPower_tt"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/power"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SPower_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Min Delay-->
+            <LinearLayout
+                android:id="@+id/SDelay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/SDelay_tt"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/minimum_delay"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/SDelay_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Max Delay-->
+             <LinearLayout
+                android:id="@+id/SMaxDelay_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                 <TextView
+                     android:id="@+id/SMDelay_tt"
+                     android:layout_width="52dp"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:fontFamily="casual"
+                     android:text="@string/maximum_delay"
+                     android:textColor="@color/azure" />
+
+                 <TextView
+                     android:id="@+id/SMDelay_tv"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_weight="1"
+                     android:fontFamily="casual"
+                     android:text=""
+                     android:textAlignment="textEnd"
+                     android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Sensor value changed-->
+            <LinearLayout
+                android:id="@+id/ValueS_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ValueChange_tt"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/value_changed"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/ValueChange_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!--Layout Accuracy changed-->
+            <LinearLayout
+                android:id="@+id/Sacc_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/Sacc_tt"
+                    android:layout_width="52dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text="@string/accuracy"
+                    android:textColor="@color/azure" />
+
+                <TextView
+                    android:id="@+id/Sacc_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="casual"
+                    android:text=""
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

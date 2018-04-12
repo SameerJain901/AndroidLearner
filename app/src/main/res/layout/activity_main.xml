@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="clover.andriod_learner.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/myCountryHash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/country_hashmaps" />
+
+        <Button
+            android:id="@+id/myDisplayMess"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/display_message" />
+
+        <Button
+            android:id="@+id/myAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/appearance" />
+
+        <Button
+            android:id="@+id/myLocat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/location_test" />
+
+        <Button
+            android:id="@+id/mySensors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/test_sensors" />
+
+        <Button
+            android:id="@+id/myDrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Drag n Drop" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
